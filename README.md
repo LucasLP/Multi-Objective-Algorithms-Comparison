@@ -19,7 +19,7 @@ Install some programs<br>
 		  <code>R</code><br>
 			<code>install.packages("scatterplot3d", repos="http://R-Forge.R-project.org") </code></li>
 		<br>
-		<li> Install <a href="https://cran.r-project.org/web/packages/PMCMR/PMCMR.pdf"> PMCMR </a>
+		<li> Install <a href="https://cran.r-project.org/web/packages/PMCMR/PMCMR.pdf"> PMCMR </a><br>
 		<code>R</code><br>
 			<code>install.packages("PMCMR") </code></li>
 		<br>
@@ -37,13 +37,13 @@ Install some programs<br>
 
 <hr>
 
-The Scatter Plot of point can be found at "experiment/MyExperiments/comparison/functions.R".<br>
+The Scatter Plot of point can be found at "Plots/ScatterPlot.R".<br>
 You can import the scripts and use, like:
 <code>R</code><br>
-<code>source("functions.R")</code><br>
+<code>source("main.R")</code><br>
 <code>algorithms = c("MOEADDRA","NSGAII","IBEA")</code><br>
 <code>objectivePoints("UF7", algorithms)</code><br>
 <code>objectivePoints3D("UF8", algorithms)</code><br>
 
 <br>
-<img src="Additional/scatter-Plot.png"><br>
+<img src="examples/scatter-Plot-UF7-UF8.png"><br>

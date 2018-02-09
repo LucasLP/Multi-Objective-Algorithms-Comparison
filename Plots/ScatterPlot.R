@@ -40,11 +40,16 @@ objectivePoints <- function(instanceName, algorithmsNames){
 		points(algorithm[,1],algorithm[,2], col=colors[i+1], pch='.')
 	}
 	# Create a title bold/italic font
-	title(main=paste("Valores dos objetivos para ", instanceName,sep=""), font.main=4)
+	#	title(main=paste("Valores dos objetivos para ", instanceName,sep=""), font.main=4) #pt-br
+	title(main=paste("Objective values for ", instanceName,sep=""), font.main=4) 
 
 	# Label the x and y axes
-	title(xlab= "Objetivo 1")
-	title(ylab= "Objetivo 2")
+	#title(xlab= "Objetivo 1")
+	#title(ylab= "Objetivo 2")
+
+	title(xlab= "Objective 1")
+	title(ylab= "Objective 2")
+
 	# Create a legend
 	legend("topright", 
 			c("Pareto set", algorithmsNames),
@@ -78,10 +83,14 @@ objectivePoints3D <- function(instanceName, algorithmsNames){
 	colors <- c("red", "blue","black","orange","green", "brown", "deepskyblue", "gray60","yellow")
 
 	s3d <- scatterplot3d(pf[,1],pf[,2],pf[,3], pch='.', angle=45, color=colors[1] ,# axes=FALSE, ann=FALSE  ,col=colors[1]
-		main=paste("Valores dos objetivos para ", instanceName,sep=""), font.main=4, 	# Create a title bold/italic font
-		xlab= "Objetivo 1",	# Label the x  y z axes
-		ylab= "Objetivo 2",
-		zlab= "Objetivo 3",
+		main=paste("Objective values for ", instanceName,sep=""), font.main=4, 	# Create a title bold/italic font
+		xlab= "Objective 1",	# Label the x  y z axes
+		ylab= "Objective 2",
+		zlab= "Objective 3",
+		#main=paste("Valores dos objetivos para ", instanceName,sep=""), font.main=4, 	# Create a title bold/italic font #pt0br
+		#xlab= "Objetivo 1",	# Label the x  y z axes
+		#ylab= "Objetivo 2",
+		#zlab= "Objetivo 3",
 		ylim=c(min_y,max_y),
 		xlim=c(min_x,max_x),
 		zlim=c(min_z,max_z),
