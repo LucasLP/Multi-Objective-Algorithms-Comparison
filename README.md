@@ -19,7 +19,10 @@ Install some programs<br>
 		  <code>R</code><br>
 			<code>install.packages("scatterplot3d", repos="http://R-Forge.R-project.org") </code></li>
 		<br>
-		<li> Install <a href="https://cran.r-project.org/web/packages/PMCMR/PMCMR.pdf"> PMCMR </a></li><br>
+		<li> Install <a href="https://cran.r-project.org/web/packages/PMCMR/PMCMR.pdf"> PMCMR </a>
+		<code>R</code><br>
+			<code>install.packages("PMCMR") </code></li>
+		<br>
 		</ol>
 	</li>
 	<li> You need <b>LaTeX</b> - For .tex files<br>
