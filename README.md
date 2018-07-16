@@ -47,3 +47,62 @@ You can import the scripts and use, like:
 
 <br>
 <img src="examples/scatter-Plot-UF7-UF8.png"><br>
+
+<hr>
+<h2>Functions avaible</h2>
+#	loadData(algorithm, instance) #Return the data file from instance ant indicator<br>
+#	setBenchmark(benchmark)<br>
+#	bestHV(algorithm, instance)<br>
+#	bestIGD(algorithm, instance)<br>
+#	bestEP(algorithm, instance)<br>
+#	bestIndicators(algorithm, instance)<br>
+#	setBenchmark(benchmark) #example, send "UF" and it will return a array with all of instances in this benchmark<br>
+#<br>
+	source("./Statistics/Counter.R")<br>
+#		countWinners(algorithms, instances)<br>
+#		countAll(algorithm, instance)<br>
+#		countAllinBenchmark(algorithm, benchmark)<br>
+<br>
+<br>
+<br>
+	source("./Statistics/MeanAndStandardDeviation.R")<br>
+#		meanAndStandardDeviationTable(OutputFile, algorithms, problems, indicator) #tex<br>
+#<br>
+	source("./Tex/latexFunctions.R")<br>
+#	#### LATEX FUNCTIONS #### <br>
+#		latexCreate(file)<br>
+#		latexHeader(file)<br>
+#		latexNewSection(file, section)<br>
+#		latexTail(file)<br>
+#  	latexTableHeader(OutputFile,indicator, caption, tabularString, latexTableFirstLine)<br>
+#		latexTableLine(file, line, best)<br>
+#		latexTableTail(file)<br>
+#		latexWinnersTable(file, problem, algorithms)<br>
+#		winnerTables(algorithms, benchmarks) #this files generate a tex file of winner algorithms <br>
+#<br>
+	source("./Plots/ScatterPlot.R")<br>
+#	#### POINT & LINE CHART ####<br>
+#		objectivePoints(instanceName, algorithmsNames)<br>
+#		objectivePoints3D(instanceName, algorithmsNames)<br>
+	source("./Plots/LinePlot.R")<br>
+#		linePlotEvolution(instance, indicator, algorithmsNames)<br>
+<br>
+<br>
+<br>
+<br>
+	source("./Statistics/Kruskal.R")<br>
+#  #### Kruskall-Wallis ####<br>
+#		KruskallWallisTest(algorithms, instance,indicator) #this will print in terminal the comparison of all algorithms<br>
+#		kruskalMain(algorithms,problems,indicator)<br>
+<br>
+#	#### R functions of JMetal (modified) ####<br>
+#<br>
+	source("./Statistics/Wilcoxon.R")<br>
+#		wilcoxonMain(algorithms,problems,indicator)<br>
+#<br>
+	source("./Plots/BoxPlot.R")<br>
+#		JMetalBoxplot(algorithms, indicator, problem)<br>
+<br>
+<br>
+	source("./Tex/latexStatisticalTests.R")<br>
+#		latexMain(algorithms, benchmark)
